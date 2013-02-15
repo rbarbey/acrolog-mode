@@ -59,11 +59,14 @@
    '("\\(authentication\\|authorization\\) token [a-zA-Z0-9=/+]+" . font-lock-keyword-face)
 
    ;; Acrolinx Server "0154cbda0717a9eb"
-   '("Acrolinx Server \"[[:xdigit:]]+\"" . font-lock-keyword-face)
+   '("Acrolinx \\(IQ \\)?Server \"[[:xdigit:]]+\"" . font-lock-keyword-face)
 
    '("\\(Language Server \\)?ls-[-[:xdigit:]]\\{3,\\}" . font-lock-keyword-face)
    ;; 2013-02-04 19:03:37,579, 2013-02-04 19:03:37.579
    '("^[-/0-9 :,.]+ |" . font-lock-preprocessor-face)
+   ;; Starting Acrolinx IQ Core Server [instance faad4b03a0e7af76], version 2.9.2, build 4290, running on Linux 2.6.18-274.12.1.el5 (amd64) with Java 1.6.0 (IBM Corporation)
+   ;; Starting Acrolinx IQ language server instance [ls-02-17d8ae813076981c], version 2.9.2, build 4290, running on Linux 2.6.18-274.12.1.el5 (amd64) with Java 1.6.0 (IBM Corporation)
+   '("Starting Acrolinx.*$" . font-lock-doc-face)
    '("Available memory.*$" . font-lock-doc-face)
    ;; --> Wrapper Started <-- Wrapper Stopped
    '("\\(-->\\|<--\\) Wrapper St.*$" . font-lock-doc-face)
