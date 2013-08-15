@@ -1,3 +1,12 @@
+;;; acrolog-mode.el --- Major mode for Acrolinx Core and Language Server log files
+;;
+;; Author
+;; Origin : https://github.com/rbarbey/acrolog-mode
+;; Maintainer : Robert Barbey <robert.barbey@acrolinx.com>
+;; Created    : February 2013
+;; Version    : 0.0.1
+
+
 ;; allow users to run their code when this mode is run
 (defvar acrolog-mode-hook nil)
 
