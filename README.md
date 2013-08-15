@@ -4,8 +4,9 @@ acrolog-mode
 Major mode for Acrolinx Core and Language Server log files
 
 Open tasks (not in any order)
+-----------------------------
 
-* Code folding (using hs-minor-mode) of 
+* Code folding (using [`hs-minor-mode`](http://www.emacswiki.org/emacs/HideShow)) of 
   * Exception stacktraces
   * check request
   * server restarts?
