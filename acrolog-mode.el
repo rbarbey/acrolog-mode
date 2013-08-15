@@ -10,6 +10,16 @@
 ;; allow users to run their code when this mode is run
 (defvar acrolog-mode-hook nil)
 
+(require 'button-lock)
+(global-button-lock-mode 1)
+(button-lock-register-global-button "http://[^[:space:]]+?/output/[^[:space:])]+"
+				    'browse-url-at-point
+				    :mouse-binding     nil
+				    :mouse-face        nil
+				    :face             'link
+				    :face-policy      'prepend
+				    :keyboard-binding "RET")
+
 ;; define keymap, if few entries, change to 'make-sparse-keymap'
 (defvar acrolog-mode-map
   (let ((map (make-keymap)))
