@@ -3,6 +3,14 @@ acrolog-mode
 
 Major mode for Acrolinx Core and Language Server log files
 
+Installation
+------------
+To use this majore mode, add the following to your `init.el` file
+
+       (add-to-list 'load-path "~/.emacs.d/acrolog-mode")
+       (require 'acrolog-mode)
+
+
 Open tasks (not in any order)
 -----------------------------
 
